@@ -27,4 +27,4 @@ docker-compose up --build
 
 
 ## USING DEVCONTAINER
-currently does not work properly needs some work!
+currently does not work. needs some work!
