@@ -1,9 +1,10 @@
 ## Dockerize Angular Project
-1) remove docker desktop and docker-engine from your pc if already installed.
-2) install Rancher Desktop by SUSE 
+1) activate WSL2 for windows
+2) remove docker desktop and docker-engine from your pc if already installed.
+3) install Rancher Desktop by SUSE 
 link: https://rancherdesktop.io/
-3) modify Dockerfile, .dockerignore, docker-compose.yml if needed.
-4) modify devcontainer if needed.
+4) modify Dockerfile, .dockerignore, docker-compose.yml if needed.
+5) modify devcontainer if needed.
 
 ## RUN USING DOCKER-COMPOSE
 ### clear
