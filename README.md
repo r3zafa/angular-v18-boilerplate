@@ -60,3 +60,9 @@ currently does not work. needs some work!
 4) install packages: `npm install`
 5) install Angular CLI `npm install -g @angular/cli@18.2.0`
 6) start application using `ng serve` or `ng serve --open`
+
+## Running on your pc without Dockerization
+1) install `Node.js v20.18.0 (LTS)` from [node.js website | download](https://nodejs.org/en/download/package-manager)
+4) install packages: `npm install`
+5) install Angular CLI `npm install -g @angular/cli@18.2.0`
+6) start application using `ng serve` or `ng serve --open`
