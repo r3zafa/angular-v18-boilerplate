@@ -1,23 +1,8 @@
-# Stage 1: Use Node.js base image to build Angular app
-FROM node:20-alpine3.18 AS builder
-
-# Install Angular CLI globally
-RUN npm install -g @angular/cli@18.2.0
-
-# Set working directory in the container
+FROM node:20-alpine3.18
 WORKDIR /app
+COPY . ./app
 
-# Copy package.json and package-lock.json to install dependencies
-COPY package*.json ./
+RUN npm i -g @angular/cli@18.2.0
+RUN npm i
 
-# Install Angular dependencies
-RUN npm install
-
-# Copy the entire application source code
-COPY . .
-
-# Expose port 4200 (default for Angular development server)
-EXPOSE 4200
-
-# Start the Angular app in development mode
-CMD ["npm", "start"]
+CMD ["ng", "serve", "--host", "0.0.0.0"]
