@@ -1,20 +1,30 @@
-# TestProjectV18
+## Dockerize Angular Project
+1) remove docker desktop and docker-engine from your pc if already installed.
+2) install Rancher Desktop by SUSE 
+link: https://rancherdesktop.io/
+3) modify Dockerfile, .dockerignore, docker-compose.yml if needed.
+4) modify devcontainer if needed.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.7.
-
-## docker compose
-
+## RUN USING DOCKER-COMPOSE
 ### clear
+``` 
+docker-compose down 
 ```
-docker-compose down
-```
-### build and start saperatly
+### build 
 ```
 docker-compose build --no-cache
+```
+### start
+corrent docker-compose will run at  `localhost:4200`
+```
 docker-compose up
 ```
 ### build and start at once: 
-This forces Docker to rebuild the image with the updated configuration.
+This forces Docker to rebuild the image with the updated configuration. corrent docker-compose will run at  `localhost:4200`
 ```
 docker-compose up --build
 ```
+
+
+## USING DEVCONTAINER
+currently does not work properly needs some work!
