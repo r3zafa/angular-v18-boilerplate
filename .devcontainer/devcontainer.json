@@ -1,0 +1,21 @@
+{
+  "name": "Angular v18 Dev Container",
+  "dockerComposeFile": ["./docker-compose.yml"],
+  "service": "angular-v18-devcontainer",
+  "workspaceFolder": "/app",
+  "forwardPorts": [4200],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "angular.ng-template",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint" // Added ESLint for linting
+      ]
+    }
+  },
+  "features": {
+    "ghcr.io/devcontainers/features/common-utils:2": {},
+    "ghcr.io/devcontainers/features/git:1": {}
+  },
+  "remoteUser": "root"
+}
