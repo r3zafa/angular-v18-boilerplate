@@ -55,7 +55,7 @@ currently does not work. needs some work!
   - Verify that Node.js is installed and the currently default version with: `node --version`. Then verify that you have npm as well, with: `npm --version` (You can also use which node or `which npm` to see the path used for the default versions).
   - To change the version of Node.js you would like to use for a project, create a new project directory `mkdir NodeTest`, and enter the directory `cd NodeTest`, then enter `nvm use node` to switch to the Current version, or `nvm use --lts` to switch to the LTS version. You can also use the specific number for any additional versions you've installed, like  `nvm use v8.2.1`. (To list all of the versions of Node.js available, use the command: `nvm ls-remote`).
 
-  - read more: [original instruction](https://learn.microsoft.com/de-de/windows/dev-environment/javascript/nodejs-on-wsl)
+  - read more: [original instruction](https://learn.microsoft.com/en-us/windows/dev-environment/javascript/nodejs-on-wsl)
 4) go to project folder: `cd angular-v18-test-project`
 4) install packages: `npm install`
 5) install Angular CLI `npm install -g @angular/cli@18.2.0`
