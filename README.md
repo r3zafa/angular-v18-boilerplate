@@ -1,4 +1,4 @@
-# Angular v18 project template
+# Angular v18 boilerplate
 
 ## Requirements to run the project in Docker
 1) activate `WSL2` for windows
