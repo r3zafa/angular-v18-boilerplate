@@ -52,9 +52,9 @@ currently does not work. needs some work!
     nvm install --lts
     nvm ls
     ```
-  - Überprüfe mit `node --version`, ob Node.js installiert ist und die neueste Version aufweist. Überprüfe dann, ob du auch über npm verfügst: `npm --version` (Du kannst auch `which node` oder `which npm` verwenden, um den Pfad anzuzeigen, der für die Standardversionen verwendet wird.)
+  - Verify that Node.js is installed and the currently default version with: `node --version`. Then verify that you have npm as well, with: `npm --version` (You can also use which node or `which npm` to see the path used for the default versions).
+  - To change the version of Node.js you would like to use for a project, create a new project directory `mkdir NodeTest`, and enter the directory `cd NodeTest`, then enter `nvm use node` to switch to the Current version, or `nvm use --lts` to switch to the LTS version. You can also use the specific number for any additional versions you've installed, like  `nvm use v8.2.1`. (To list all of the versions of Node.js available, use the command: `nvm ls-remote`).
 
-  - Um die Version von Node.js zu ändern, die du für ein Projekt verwenden möchtest, erstellst du ein neues Projektverzeichnis `mkdir NodeTest` und wechselst in das Verzeichnis (`cd NodeTest`). Gib dann `nvm use node` ein, und wechsele zur aktuellen Version, oder verwende `nvm use --lts`, um zur LTS-Version zu wechseln. Du kannst auch eine spezifische andere Version verwenden, die du installiert hast, z.B. `nvm use v8.2.1`. (Um alle verfügbaren Versionen von Node.js aufzulisten, verwendest du den Befehl `nvm ls-remote`.)
   - read more: [original instruction](https://learn.microsoft.com/de-de/windows/dev-environment/javascript/nodejs-on-wsl)
 4) go to project folder: `cd angular-v18-test-project`
 4) install packages: `npm install`
