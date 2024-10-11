@@ -27,7 +27,7 @@ link: https://rancherdesktop.io/
   ```
 
 ### USING DEVCONTAINER
-you can start the project using github > `use this template` >`Open in a codespace` OR USING vs code in your system
+you can start the project using github > `use this template` >`Open in a codespace` OR USING vs code in your system **`WSL2` and `DOCKER` are REQUIRED**
 
 ## USING WSL2 (WINDOWS SUBSYSTEM FOR LINUX)
 1) activate `WSL2`
