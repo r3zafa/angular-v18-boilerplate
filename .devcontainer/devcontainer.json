@@ -1,21 +1,21 @@
 {
-  "name": "Angular v18 Dev Container",
-  "dockerComposeFile": ["./docker-compose.yml"],
-  "service": "angular-v18-devcontainer",
-  "workspaceFolder": "/app",
-  "forwardPorts": [4200],
+  "name": "Angular Dev Container",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
   "customizations": {
     "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+      },
       "extensions": [
-        "angular.ng-template",
-        "esbenp.prettier-vscode",
-        "dbaeumer.vscode-eslint" // Added ESLint for linting
+        "ms-azuretools.vscode-docker",
+        "eg2.vscode-npm-script",
+        "angular.ng-template"
       ]
     }
   },
-  "features": {
-    "ghcr.io/devcontainers/features/common-utils:2": {},
-    "ghcr.io/devcontainers/features/git:1": {}
-  },
-  "remoteUser": "root"
+  "postCreateCommand": "npm install",
+  "remoteUser": "node"
 }
