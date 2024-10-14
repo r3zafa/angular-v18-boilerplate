@@ -16,5 +16,6 @@
       ]
     }
   },
-  "remoteUser": "node"
+  "remoteUser": "node",
+  "postCreateCommand": "npm install && npm install -g @angular/cli@18.2.0"
 }
