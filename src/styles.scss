@@ -1,6 +1,6 @@
-body {
-    width: 100dvw;
-    height: 100dvh;
-    padding: unset;
-    margin: unset;
-}
+/* You can add global styles to this file, and also import other style files */
+
+$primary: #8514F5;
+$enable-rounded: false;
+
+@import '@angular-schule/workshop-styles/index';
