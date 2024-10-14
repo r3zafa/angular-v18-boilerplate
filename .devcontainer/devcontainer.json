@@ -1,7 +1,9 @@
 {
   "name": "Angular Dev Container",
-  "build": {
-    "dockerfile": "Dockerfile",
+  "image":"mcr.microsoft.com/devcontainers/typescript-node:16-bullseye",
+  "features": {
+    "ghcr.io/devcontainers-contrib/features/angular-cli:1": {},
+    "ghcr.io/devcontainers/features/docker-in-docker:1": {}
   },
   "customizations": {
     "vscode": {
