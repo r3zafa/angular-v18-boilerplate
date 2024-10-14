@@ -2,7 +2,6 @@
   "name": "Angular Dev Container",
   "build": {
     "dockerfile": "Dockerfile",
-    "context": ".."
   },
   "customizations": {
     "vscode": {
