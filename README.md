@@ -13,17 +13,31 @@ link: https://rancherdesktop.io/
   ``` 
   docker-compose down 
   ```
-- build 
+- build all docker containers
   ```
   docker-compose build --no-cache
   ```
-- start:corrent docker-compose will run at  `localhost:4200`
+- build a specific docker container
+  ```
+  docker-compose build angular-app
+  docker-compose build angular-test
+  docker-compose build angular-build
+  ```
+- start all of the defined containers
   ```
   docker-compose up
   ```
-- build and start at once: This forces Docker to rebuild the image with the updated configuration. corrent docker-compose will run at  `localhost:4200`
+- build and start all of docker containers at once: 
+  - This forces Docker to rebuild the image with the updated configuration.
+
   ```
   docker-compose up --build
+  ```
+- build and start a specific docker container
+  ```
+  docker-compose up --build angular-app
+  docker-compose up --build angular-test
+  docker-compose up --build angular-build
   ```
 
 ### USING DEVCONTAINER

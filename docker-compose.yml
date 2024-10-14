@@ -1,5 +1,7 @@
+version: '3.8'
+
 services:
-  angular-v18:
+  angular-app:
     build:
       context: .
       dockerfile: Dockerfile
@@ -10,3 +12,24 @@ services:
       - /app/node_modules
     working_dir: /app
     command: ["npm", "start"]
+
+  angular-test:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules
+    working_dir: /app
+    environment:
+      CHROME_BIN: /usr/bin/chromium-browser
+    command: ["npm", "test"]
+
+  angular-build:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["npm", "build"]
