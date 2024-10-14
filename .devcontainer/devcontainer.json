@@ -17,5 +17,5 @@
     }
   },
   "remoteUser": "node",
-  "postCreateCommand": "ng serve"
+  "postCreateCommand": "npm i"
 }
