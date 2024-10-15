@@ -60,11 +60,14 @@ you can start the project using github > `use this template` >`Open in a codespa
     ```
     ```
     command -v nvm
+    nvm list available
     nvm ls
     ```
     ```
     nvm install --lts
+    nvm install [version from nvm list available]
     nvm ls
+    nvm use [version from nvm ls]
     ```
   - Verify that Node.js is installed and the currently default version with: `node --version`. Then verify that you have npm as well, with: `npm --version` (You can also use which node or `which npm` to see the path used for the default versions).
   - To change the version of Node.js you would like to use for a project, create a new project directory `mkdir NodeTest`, and enter the directory `cd NodeTest`, then enter `nvm use node` to switch to the Current version, or `nvm use --lts` to switch to the LTS version. You can also use the specific number for any additional versions you've installed, like  `nvm use v8.2.1`. (To list all of the versions of Node.js available, use the command: `nvm ls-remote`).
