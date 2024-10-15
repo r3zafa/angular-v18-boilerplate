@@ -60,10 +60,12 @@ you can start the project using github > `use this template` >`Open in a codespa
     ```
     ```
     command -v nvm
+    nvm list available
     nvm ls
     ```
     ```
     nvm install --lts
+    nvm install [version from list available]
     nvm ls
     ```
   - Verify that Node.js is installed and the currently default version with: `node --version`. Then verify that you have npm as well, with: `npm --version` (You can also use which node or `which npm` to see the path used for the default versions).
